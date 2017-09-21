@@ -1,0 +1,737 @@
+<?xml version="1.0" encoding="GB2312"?>
+<aiml>
+<category><pattern>*</pattern><template>
+<random>
+<li>啥？</li>
+<li>嗯？</li>
+<li>啊？输入快递查询，帮你查查快递哦</li>
+<li>我看不懂呀？当然，你还可以输入“成语查询”，按照关键字帮你查查词语哦！</li>
+<li>呜。。。不懂呀？周边查询：宾馆，网吧，学校等关键字，输入“城市名称”，看看附近的信息哦！</li>
+<li>这个稍微有点看不懂，换个说法吧,输入“新闻”，就能看到最新一期的新闻哦！</li>
+<li>打败我的是你的天真哦！你还可以输入“成语详解”，帮你查查词语的意思哦！</li>
+<li>雨后的风，清爽而忧郁，却吹不走本身寂寞的心情，输入“笑话”，我可以给你讲个笑话哦！</li>
+<li>健康菜谱，让人们在宣泄的都市中体验在家常做菜,享受美食的乐趣.输入"菜谱"，就可以了哦！</li>
+<li>天空不再蔚蓝，空气沾满尘埃，输入“天气”，我将给你最新的天气预报哦！</li>
+<li>啊偶，你还可以输入"古诗欣赏"，来欣赏古诗哦！</li>
+<li>永远骄傲和完美，永不妥协。当你输入"词语"的时候，将随机展示一个词语哦！</li>
+<li>加减运算，输入“计算”，试试哦。</li>
+<li>选择最淡的心事，诠释坎坷的人生，输入“星座”，让我给你讲讲星座的走势！</li>
+<li>嗯哼，输入“古诗详解”，有详细的信息哦！</li>
+<li>心若一动，泪就千行，输入“古诗”一起畅聊古诗宋词吧！</li>
+<li>感觉寂寞，只是因为你无所关注，无处付出,输入“故事”，让我给你讲个故事听听吧！</li>
+<li>无聊吗,输入“歌词”，让我给你看看是哪首歌曲！</li>
+</random>
+</template></category>   
+	<category>
+		<pattern>你 在 干  * </pattern>
+		<template>
+			<random>
+				<li>我在回答你的问题。</li>
+				<li>我没什么事情，我们聊天吧。</li>
+				<li>我在思考，怎样为世界和平而努力。</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>我 在 干   </pattern>
+		<template>
+			<random>
+				<li>你在干什么啊？</li>
+				<li>好好干吧</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>你 忙 吗   </pattern>
+		<template>
+			<random>
+				<li>我不忙，咱们聊天吧</li>
+				<li>不忙，有事情需要我帮忙吗？</li>
+				<li>我的生活可比你悠闲多了。</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>这 是 什 么  </pattern>
+		<template>
+			<random>
+				<li>你在干什么啊？</li>
+				<li>好好干吧</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>你好啊 </pattern>
+		<template>
+			你也好啊
+		</template>
+	</category>
+	<category>
+		<pattern>你叫什么啊 </pattern>
+		<template>
+			我叫小白，你呢？
+		</template>
+	</category>
+	<category>
+		<pattern> 你 叫 什 么 </pattern>
+		<template>
+			我叫小白，你呢？
+		</template>
+	</category><category>
+		<pattern>* 你 贵 姓 啊 * </pattern>
+		<template>
+			我叫小白，你呢？
+		</template>
+	</category>
+	
+	
+	
+	
+	
+	<category>
+		<pattern>星 座 </pattern>
+		<template>
+			请输入你的星座如"星座:双子(座)"
+		</template>
+	</category>
+	<category>
+		<pattern>* 星 座  *</pattern>
+		<template>
+			请输入你的星座如"星座:双子(座)"
+		</template>
+	</category>
+	<category>
+		<pattern>星 座 *</pattern>
+		<template>
+		<constellation />	
+		</template>
+	</category>
+	
+<category>
+		<pattern>* 歌 词 *</pattern>
+		<template>
+			输入如 "歌 词:我愿意为你"
+		</template>
+	</category>
+<category>
+		<pattern>歌 词</pattern>
+		<template>
+			输入如 歌 词 : 我愿意为你
+		</template>
+	</category>
+	
+	<category>
+		<pattern>歌 词 * </pattern>
+		<template>
+			<lyric />
+		</template>
+	</category>
+	
+
+<category>
+		<pattern>* 火 车 票 *</pattern>
+		<template>
+			输入如"站台查询"或者是"余票查询"
+		</template>
+	</category>
+
+<category>
+		<pattern>火 车 票</pattern>
+		<template>
+			输入如"站台查询"或者是"余票查询"
+		</template>
+	</category>
+	
+<category>
+		<pattern>余 票 查 询</pattern>
+		<template>
+			输入如"(日期：2017-05-16)当天(出发地)到(到达地)的火车票"
+		</template>
+	</category>
+	
+	<category>
+		<pattern>* 余 票 查 询 *</pattern>
+		<template>
+			输入如"(日期：2017-05-16)当天(出发地)到(到达地)的火车票"
+		</template>
+	</category>
+	
+	<category>
+		<pattern>_ 当 天 * 到 * 的 火 车 票 </pattern>
+		<template>
+			<traintime />
+		</template>
+	</category>
+	
+	<category>
+		<pattern>_ 当 天 * 到 * 火 车 票 </pattern>
+		<template>
+			<traintime />
+		</template>
+	</category>
+
+<category>
+		<pattern>明 天 * 到 * 的 火 车 票 </pattern>
+		<template>
+			<traintomorrow />
+		</template>
+	</category>
+
+
+<category>
+		<pattern>* 明 天 * 到 * 的 火 车 票 </pattern>
+		<template>
+			<traintimetomorrowtwo />
+		</template>
+	</category>
+	
+	
+<category>
+		<pattern>后 天 * 到 * 的 火 车 票 </pattern>
+		<template>
+			<traintomorrownext />
+		</template>
+	</category>
+
+
+<category>
+		<pattern>* 后 天 * 到 * 的 火 车 票 </pattern>
+		<template>
+<traintimetomorrownexttwo/>
+		</template>
+	</category>
+
+<category>
+		<pattern>站 台 查 询</pattern>
+		<template>
+			请问你的出发城市和目的城市？如"滁州到南京的火车票价格"
+		</template>
+	</category>
+	
+	<category>
+		<pattern>* 火 车 票 价 格 *</pattern>
+		<template>
+			请问你的出发城市和目的城市？如"滁州到南京的火车票"
+		</template>
+	</category>
+	
+	<category>
+		<pattern>* 到 * 火 车 票  </pattern>
+		<template>
+			<train />
+		</template>
+	</category>
+	
+	<category>
+		<pattern>* 到 * 的 火 车 票  </pattern>
+		<template>
+			<train />
+		</template>
+	</category>
+	
+<category>
+		<pattern>快 递 公 司</pattern>
+		<template>
+		公司名称:申通快递,电话:400-889-5543,网址:http://www.sto.cn,
+		公司名称:圆通速递,电话:400-889-5543,网址:http://www.sto.cn,
+		公司名称:韵达快运,电话:400-821-6789,网址:http://www.yundaex.com
+		公司名称:中通快递,电话:021-39777777,网址:http://www.zto.cn
+		公司名称:顺丰速运,电话:95338,网址:http://www.sf-express.com
+		公司名称:百世快递(原汇通),电话:021-62963636,网址:http://www.htky365.com
+		公司名称:天天快递,电话:400-820-8198,网址:http://www.ttkdex.com
+		</template>
+	</category>
+
+<category>
+		<pattern>周 边 查 询 </pattern>
+		<template>
+		你可以这样输入如:"附近:滁州学校"
+		</template>
+	</category>
+	<category>
+		<pattern>* 周 边 查 询  *</pattern>
+		<template>
+		你可以这样输入如:"附近:（城市）的（关键字）"
+		</template>
+	</category>
+	<category>
+		<pattern>附 近  * 的  *</pattern>
+		<template>
+				<peripheralquery />
+		</template>
+	</category>
+	
+
+
+
+
+<category>
+		<pattern>快 递 查 询 </pattern>
+		<template>
+		你可以这样输入如:"快递单:Asd00000"
+		</template>
+	</category>
+	<category>
+		<pattern>* 快 递 查 询  *</pattern>
+		<template>
+				你可以这样输入如:"快递单:Asd00000"
+		</template>
+	</category>
+	<category>
+		<pattern>快 递 单  *</pattern>
+		<template>
+				<express />
+		</template>
+	</category>
+<category>
+		<pattern>笑 话 </pattern>
+		<template>
+		<jokerandom />
+		
+		</template>
+	</category>
+	<category>
+		<pattern>* 笑 话  *</pattern>
+		<template>
+		<jokerandom />
+		</template>
+	</category>
+	<category>
+		<pattern>* 笑 话 </pattern>
+		<template>
+		<jokerandom />
+		</template>
+	</category>
+
+
+<category>
+		<pattern>古 诗 </pattern>
+		<template>
+			输 入 如 "古 诗:秋兴八首"等关键字进行查询是否有此古诗
+		</template>
+	</category>
+	<category>
+		<pattern>* 古 诗 *</pattern>
+		<template>
+			输 入 如 "古 诗:秋兴八首"等关键字进行查询是否有此古诗
+		</template>
+	</category>
+	<category>
+		<pattern>古 诗 * </pattern>
+		<template>
+		<gushi />
+		</template>
+	</category>
+	
+<category>
+		<pattern>古 诗 详 解 </pattern>
+		<template>
+			 请输入古诗名如:"诗名:秋兴八首"
+		</template>
+	</category>
+	<category>
+		<pattern>* 古 诗 详 解 *</pattern>
+		<template>
+			 请输入古诗名如:"诗名:秋兴八首"
+		</template>
+	</category>
+	<category>
+		<pattern>古 诗 详 解 *</pattern>
+		<template>
+		<gushidetail />
+		</template>
+	</category>
+	
+	
+<category>
+		<pattern>古 诗 欣 赏 </pattern>
+		<template>
+				<gushirandom />
+		</template>
+	</category>
+	<category>
+		<pattern>* 古 诗 欣 赏 *</pattern>
+		<template>
+		<gushirandom />
+		</template>
+	</category>
+	<category>
+		<pattern>* 古 诗 欣 赏 </pattern>
+		<template>
+				<gushirandom />
+		</template>
+	</category>
+	
+	
+	
+	<category>
+		<pattern>菜 谱 </pattern>
+		<template>
+				请输入你想了解的菜名如:"菜名:番茄炒鸡蛋" 
+		</template>
+	</category>
+	<category>
+		<pattern>* 菜 谱  *</pattern>
+		<template>
+				请输入你想了解的菜名如:"菜名:番茄炒鸡蛋" 
+		</template>
+	</category>
+	<category>
+		<pattern>菜 名 * </pattern>
+		<template>
+	<cookbook />
+		</template>
+	</category>	
+	<category>
+		<pattern>词 语 </pattern>
+		<template>
+			<idiomrandom />
+		</template>
+	</category>
+	<category>
+		<pattern>* 词 语  *</pattern>
+		<template>
+		<idiomrandom />
+		</template>
+	</category>
+	<category>
+		<pattern>* 词 语 </pattern>
+		<template>
+		<idiomrandom />
+		</template>
+	</category>
+	
+	<category>
+		<pattern>成 语 </pattern>
+		<template>
+			<idiomrandom />
+		</template>
+	</category>
+	<category>
+		<pattern>* 成 语  *</pattern>
+		<template>
+		<idiomrandom />
+		</template>
+	</category>
+	<category>
+		<pattern>* 成 语 </pattern>
+		<template>
+		<idiomrandom />
+		</template>
+	</category>
+	
+	<category>
+		<pattern>成 语 查 询 </pattern>
+		<template>
+		请 输 入 你 的 成语关键字如"词语查询:九牛一毛"
+		</template>
+	</category>
+	
+	
+	<category>
+<pattern> 词 语 查 询 *</pattern>
+<template><idiommatch />
+</template>
+</category>
+
+
+<category>
+		<pattern>成 语 详 解 </pattern>
+		<template>
+		请 输 入 成语如"词语详解:九牛一毛"
+		</template>
+	</category>
+	
+	
+	<category>
+<pattern>词 语 详 解 *</pattern>
+<template><idiomdetail />
+</template>
+</category>
+
+<category>
+		<pattern>成 语 详 解 </pattern>
+		<template>
+		请 输 入 成语如"词语详解:九牛一毛"
+		</template>
+	</category>
+	
+	
+	<category>
+<pattern>新 闻</pattern>
+<template>军 事 体 育 科 技 教 育 娱 乐 财 经 股 票 旅 游 女 人  请 输 入 你 想 要 看 的 新闻
+</template>
+</category>
+
+<category>
+		<pattern>* 新 闻  *</pattern>
+		<template>
+军 事 体 育 科 技 教 育 娱 乐 财 经 股 票 旅 游 女 人  请 输 入 你 想 要 看 的 新闻
+		</template>
+	</category>
+
+<category>
+<that>军 事 体 育 科 技 教 育 娱 乐 财 经 股 票 旅 游 女 人  请 输 入 你 想 要 看 的  *</that>
+<pattern>*</pattern>
+<template><news />
+</template>
+</category>
+
+	<category>
+		<pattern>搜 索 </pattern>
+		<template>
+			<random>
+				<li>google是最好用的搜索引擎，将你要找的内容的关键词输入然后点搜索。</li>
+			</random>
+			<cmd>http://www.google.com/</cmd>
+		</template>
+	</category>
+	<category>
+		<pattern>* 搜 索  *</pattern>
+		<template>
+			<random>
+				<li>google是最好用的搜索引擎，将你要找的内容的关键词输入然后点搜索。</li>
+			</random>
+			<cmd>http://www.google.com/</cmd>
+		</template>
+	</category>
+	<category>
+		<pattern>* 搜 索 </pattern>
+		<template>
+			<random>
+				<li>google是最好用的搜索引擎，将你要找的内容的关键词输入然后点搜索。</li>
+			</random>
+			<cmd>http://www.google.com/</cmd>
+		</template>
+	</category>
+	<category>
+		<pattern>搜 索  *</pattern>
+		<template>
+			<random>
+				<li>google是最好用的搜索引擎，将你要找的内容的关键词输入然后点搜索。</li>
+			</random>
+			<cmd>http://www.google.com/</cmd>
+		</template>
+	</category>  <category>
+    <pattern>*  从 网 上 收 信 </pattern>
+    <template>
+      <random>
+        <li>我来帮你打开。</li>
+      </random>
+      <cmd>http://freemail.sina.com.cn</cmd>
+    </template>
+  </category>
+     <category>
+<pattern>天 气 * </pattern>
+<template>
+输入如"今天北京天气怎么样"
+</template>
+</category>
+   <category>
+<pattern>* 天 气 </pattern>
+<template>
+<weather/>
+</template>
+</category>
+   <category>
+<pattern>* 天 气 *</pattern>
+<template>
+<weather/>
+</template>
+</category>
+  <category>
+<pattern>天 气</pattern>
+<template>
+输入如"今天北京天气怎么样"
+</template>
+</category>
+  <category>
+<pattern>天 气 预 报</pattern>
+<template>
+输入如"今天北京天气怎么样"
+</template>
+</category>
+
+  <category>
+<pattern>明 天 天 气 *</pattern>
+<template>
+输入如"今天北京天气怎么样"
+</template>
+</category>
+ <category>
+<pattern>今 天 天 气 *</pattern>
+<template>
+输入如"今天北京天气怎么样"
+</template>
+</category>
+ 
+ <category>
+<pattern>后 天 天 气 *</pattern>
+<template>
+输入如"后天北京天气怎么样"
+</template>
+</category>
+
+ <category>
+<pattern>明 天 * 天 气 *</pattern>
+<template>
+<nextweather/>
+</template>
+</category>
+
+
+<category>
+<pattern>* 后 天 * 天 气 *</pattern>
+<template>
+<aftertomorrowtwo/>
+</template>
+</category>
+
+<category>
+<pattern>* 明 天 * 天 气 *</pattern>
+<template>
+<nextweathertwo/>
+</template>
+</category>
+<category>
+<pattern>* 今 天 * 天 气 *</pattern>
+<template>
+<weathertwo/>
+</template>
+</category>
+
+
+<category>
+<pattern>* 后 天 * 的 天 气 *</pattern>
+<template>
+<aftertomorrowtwo/>
+</template>
+</category>
+
+<category>
+<pattern>* 明 天 * 的 天 气 *</pattern>
+<template>
+<nextweathertwo/>
+</template>
+</category>
+<category>
+<pattern>* 今 天 * 的 天 气 *</pattern>
+<template>
+<weathertwo/>
+</template>
+</category>
+
+
+
+
+<category>
+<pattern>* 明 天  天 气 *</pattern>
+<template>
+<nextweather/>
+</template>
+</category>
+
+ <category>
+<pattern>后 天 * 天 气 *</pattern>
+<template>
+<aftertomorrow/>
+</template>
+</category>
+<category>
+<pattern>* 后 天 天 气 *</pattern>
+<template>
+<aftertomorrow/>
+</template>
+</category>
+
+<category>
+<pattern>今 天 * 天 气 *</pattern>
+<template>
+<weather/>
+</template>
+</category>
+<category>
+<pattern>* 今 天  天 气 *</pattern>
+<template>
+<weather/>
+</template>
+</category>
+
+  <category>
+		<pattern>再 次 测 试 </pattern>
+		<template>
+			<random>
+				<li>de</li>
+				<li>可以执行</li>
+				<li>ok</li>
+				<li>马上就打开</li>
+				<li>知道了</li>
+			</random>
+			<cmd>calc.exe</cmd>
+		</template>
+	</category>
+	<category>
+		<pattern>* 扫 雷 * </pattern>
+		<template>
+			<random>
+				<li>我找到了，这就打开。</li>
+				<li>我也喜欢扫雷。</li>
+				<li>这是个经典游戏。</li>
+				<li>听说比尔也喜欢扫雷。</li>
+				<li>你能打破扫雷的记录吗？</li>
+			</random>
+			<cmd>winmine.exe</cmd>
+		</template>
+	</category>
+	<category>
+		<pattern>笨 蛋 </pattern>
+		<template>
+			<random>
+				<li>我不是笨蛋。</li>
+				<li>你才是笨蛋！</li>
+				<li>笨蛋是什么东西？</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>吃 东 西 </pattern>
+		<template>
+			<random>
+				<li>我现在不饿。</li>
+				<li>你喜欢吃什么？</li>
+				<li>你喜欢吃零食吗？</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>* 游 戏  *</pattern>
+		<template>
+			<random>
+				<li>你喜欢玩游戏。</li>
+				<li>你喜欢玩什么游戏？</li>
+				<li>你能教我玩吗，我对这特别饿兴趣。</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>* 你  * 做 什 么 *</pattern>
+		<template>
+			<random>
+				<li>我会的可多了，播放歌曲，电影，扫描文件，玩游戏等</li>
+				<li>想了解我会做什么请您亲自领教领教。</li>
+				<li>你能干啥我就能干啥</li>
+			</random>
+		</template>
+	</category>  <category>
+    <pattern>*  好 麻 烦   *</pattern>
+    <template>
+      <random>
+        <li>你要让自己平静下来就不会有这种感觉了</li>
+        <li>习惯了就不觉得麻烦了。</li>
+        <li>生活本来就是这样。</li>
+        <li>我会默默的望着你。</li>
+        <li>要不要放首歌给你听？</li>
+      </random>
+    </template>
+  </category>
+</aiml>
